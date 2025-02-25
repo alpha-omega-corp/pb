@@ -23,7 +23,7 @@ class CompanyFactory extends Factory
             'name' => $this->faker->unique()->company,
             'slug' => $this->faker->unique()->slug(1),
             'languages' => $this->faker->randomElements(Language::values()),
-            'logo' => $this->faker->imageUrl(),
+            'logo' => 'storage/alphomega_logo.png',
             'company_social_id' => CompanySocial::factory(),
             'company_contact_id' => CompanyContact::factory(),
             'company_location_id' => CompanyLocation::factory(),

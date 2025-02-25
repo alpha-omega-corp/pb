@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', EnvironmentType::LOCAL),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------

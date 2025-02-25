@@ -368,5 +368,3 @@ Route::post('/request/partner', 'ServiceRequestController@commissionFormAction')
 Route::post('/request/caterer', 'ServiceRequestController@catererFormAction')->name('request.caterer');
 Route::post('/request/general', 'ServiceRequestController@requestFormAction')->name('request.general');
 
-
-//language switch

@@ -1,19 +1,14 @@
-version: '3.1'
 services:
   db:
-    image: mariadb
-    restart: always
+    image: postgres
+    ports:
+      - "5435:5432"
     environment:
-      MARIADB_ROOT_PASSWORD: pb
-      MARIADB_DATABASE: pb
-    ports:
-      - "3306:3306"
+      - POSTGRES_PASSWORD=pb
+      - POSTGRES_USER=pb
+      - POSTGRES_DB=pb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - "8080:8080"
-
-
-
+volumes:
+  pgdata:

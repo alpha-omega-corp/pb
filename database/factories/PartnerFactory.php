@@ -70,7 +70,6 @@ class PartnerFactory extends Factory
                     ->winner(function () use ($partner) {
                         PartnerTop::factory()->for($partner)->create();
                     })->choose();
-
         });
     }
 

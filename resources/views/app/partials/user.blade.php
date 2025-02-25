@@ -20,7 +20,6 @@
                         <a class="dropdown-item" href="{{url(route(__('route.admin-partners')))}}">
                             Partners
                         </a>
-
                     </li>
                     <li>
                         <a class="dropdown-item" href="{{url(route(__('route.admin-content')))}}">
@@ -74,6 +73,11 @@
         </div>
     </div>
 @else
+
+    <div class="d-flex flex-column">
+        <div><span class="text-blue">User: </span> admin@alphomega.org</div>
+        <div><span class="text-danger">Password: </span> password</div>
+    </div>
     <div class="app-navigation-login">
         <x-modal.open
             :singleton="true"
@@ -82,7 +86,10 @@
             :fit="true"
             :text="__('app.login')"
         />
+
     </div>
+
+
 @endif
 
 

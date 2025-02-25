@@ -1,11 +1,6 @@
 <div class="app-listing-filters">
     <div class="sticky-listing-search listing-search-container">
 
-        <div class="desktop-listing-filters">
-            @include('app.listing.partials.search')
-            @include('app.listing.partials.filters')
-        </div>
-
         <div x-data="listingFilters(['search', 'category', 'location'])" class="mobile-listing-filters shadow-lg">
 
             <div class="mobile-listing-filters__buttons">

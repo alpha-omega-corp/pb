@@ -18,7 +18,7 @@ class AppPostFactory extends Factory
     public function definition(): array
     {
         return [
-            'image' => '/storage/images/adverts/placeholder.jpg',
+            'image' => 'storage/placeholder.jpg',
             'status' => rand(true, false),
         ];
     }

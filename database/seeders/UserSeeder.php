@@ -14,8 +14,8 @@ class UserSeeder extends Seeder
             ->create();
 
         User::factory([
-            'email' => 'bleyo@alphomega.org',
-            'name' => 'Nicholas',
+            'email' => 'admin@alphomega.org',
+            'name' => 'admin',
             'is_admin' => true,
             'partner_id' => null
         ])->create();
